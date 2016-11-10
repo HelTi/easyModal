@@ -1,0 +1,35 @@
+
+*{padding: 0; margin:0;}
+/*背景样式*/
+#super{
+    position: fixed;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    background-color: #000000;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    padding: 20px;
+}
+/*模态框样式*/
+.modal{
+    position:absolute;
+    padding: 10px;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+/*模态框动画*/
+.moanimate{
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Title</title>
+    <script src="js/jquery-2.1.1.js"></script>
+</head>
+<style>
+    .modal{
+         width: 800px;
+        height: 600px;
+        margin: 0 auto;
+        background-color: #999999;
+        text-align: center;
+        position: relative;
+        top: -800px;
+    }
+    .moanimate{
+        top: 10px;
+        transition: all .3s ease-in;
+       -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+
+    }
+</style>
+<body>
+<button id="btn">btn</button>
+ <div class="modal">
+     <P>pppppppppppppppppppp</P>
+     <P>pppppppppppppppppppp</P>
+     <P>pppppppppppppppppppp</P>
+     <P>pppppppppppppppppppp</P>
+     <P>pppppppppppppppppppp</P>
+     <P>pppppppppppppppppppp</P>
+     <P>pppppppppppppppppppp</P>
+ </div>
+
+</body>
+<script>
+    $(function(){
+        $("#btn").click(function(){
+            $(".modal").addClass("moanimate");
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模态框</title>
+    <link href="css/modal.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/modal.js"></script>
+</head>
+<body>
+<button id="btn">打开模态框</button>
+<div class="con">
+    <p>模态框自定义内容</p>
+</div>
+</body>
+<script>
+    $(function(){
+        $("#btn").modal({
+           content:'.con'
+        });
+    })
+</script>
+</html>
